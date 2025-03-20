@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReadNote.Vistas.indexVista"
+             BackgroundColor="#3A2121">
+    <ContentPage.Content>
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Encabezado -->
+            <Frame Grid.Row="0" Padding="5" BackgroundColor="#D9D9D9" CornerRadius="20" BorderColor="Transparent" HeightRequest="40"/>
+
+            <StackLayout Grid.Row="1" Padding="10">
+                <Label Text="Hola !!" FontFamily="Lemon" TextColor="White"
+                       FontAttributes="Bold" FontSize="{DynamicResource HeaderFontSize}"
+                       HorizontalOptions="Start"/>
+                <Label x:Name="lblSaludo" Text="Buenos días lector" FontFamily="Lemon" 
+                       TextColor="White" FontAttributes="Bold" FontSize="{DynamicResource HeaderFontSize}"
+                       HorizontalOptions="Start"/>
+
+                <Label Text="Vamos a retomar tu lectura" FontFamily="Lemon"
+                       FontAttributes="Bold" FontSize="{DynamicResource SubHeaderFontSize}"
+                       TextColor="White" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <!-- Menú de opciones -->
+            <Grid Grid.Row="2" ColumnSpacing="10" RowSpacing="10"
+                  HorizontalOptions="FillAndExpand" Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Botón Material -->
+                <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="#D9D9D9"
+                       CornerRadius="40" Padding="10" Margin="5"
+                       WidthRequest="{DynamicResource ButtonSize}" HeightRequest="{DynamicResource ButtonSize}">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="material.png" HeightRequest="{DynamicResource IconSize}" WidthRequest="{DynamicResource IconSize}"/>
+                        <Label Text="Material" FontFamily="Lemon" FontSize="{DynamicResource ButtonFontSize}" 
+                               FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnMaterialTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Botón Colecciones -->
+                <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#D9D9D9"
+                       CornerRadius="40" Padding="10" Margin="5"
+                       WidthRequest="{DynamicResource ButtonSize}" HeightRequest="{DynamicResource ButtonSize}">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="colecciones.png" HeightRequest="{DynamicResource IconSize}" WidthRequest="{DynamicResource IconSize}"/>
+                        <Label Text="Colecciones" FontFamily="Lemon" FontSize="{DynamicResource ButtonFontSize}" 
+                               FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnColeccionesTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Botón Alarmas -->
+                <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="#D9D9D9"
+                       CornerRadius="40" Padding="10" Margin="5"
+                       WidthRequest="{DynamicResource ButtonSize}" HeightRequest="{DynamicResource ButtonSize}">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="alarmas.png" HeightRequest="{DynamicResource IconSize}" WidthRequest="{DynamicResource IconSize}"/>
+                        <Label Text="Alarmas" FontFamily="Lemon" FontSize="{DynamicResource ButtonFontSize}" 
+                               FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAlarmasTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Botón Notas -->
+                <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="#D9D9D9"
+                       CornerRadius="40" Padding="10" Margin="5"
+                       WidthRequest="{DynamicResource ButtonSize}" HeightRequest="{DynamicResource ButtonSize}">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="notas.png" HeightRequest="{DynamicResource IconSize}" WidthRequest="{DynamicResource IconSize}"/>
+                        <Label Text="Notas" FontFamily="Lemon" FontSize="{DynamicResource ButtonFontSize}" 
+                               FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnNotasTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
+
+            <!-- Última nota -->
+            <StackLayout Grid.Row="3" Padding="10">
+                <Label Text="Tu última nota:" FontFamily="Lemon" FontAttributes="Bold" FontSize="{DynamicResource SubHeaderFontSize}" 
+                       TextColor="White" HorizontalOptions="Start"/>
+                <Frame BackgroundColor="#D9D9D9" CornerRadius="40" Padding="15" Margin="10">
+                    <Label Text="Aún no tienes notas, vamos a crear una nueva historia entonces."
+                           FontAttributes="Italic" FontSize="{DynamicResource NormalFontSize}" TextColor="Black"
+                           FontFamily="Lemon" HorizontalTextAlignment="Center"/>
+                </Frame>
+            </StackLayout>
+
+            <!-- Menú inferior -->
+            <Frame Grid.Row="4" Padding="15" BackgroundColor="#D9D9D9" CornerRadius="40" BorderColor="Transparent">
+                <Grid BackgroundColor="#D9D9D9" HeightRequest="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="notificacion.png" WidthRequest="50" HeightRequest="50" Grid.Column="0"
+                           VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Image Source="mas.png" WidthRequest="50" HeightRequest="50" Grid.Column="1"
+                           VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Image Source="nuevacuenta.png" WidthRequest="50" HeightRequest="50" Grid.Column="2"
+                           VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

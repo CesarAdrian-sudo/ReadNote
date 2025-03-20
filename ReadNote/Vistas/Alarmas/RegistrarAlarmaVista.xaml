@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ReadNote.CustomControls"
+             x:Class="ReadNote.Vistas.Alarmas.RegistrarAlarmaVista"
+             BackgroundColor="#3A2121">
+    
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="10">
+
+            <!-- Barra Superior -->
+            <Frame Padding="5" BackgroundColor="#D9D9D9" CornerRadius="30" BorderColor="Transparent">
+                <Grid BackgroundColor="LightGray" HeightRequest="50">
+                    <Image Source="volver.png" WidthRequest="{DynamicResource IconSize}" HeightRequest="{DynamicResource IconSize}"
+                            VerticalOptions="Center" HorizontalOptions="Start" Margin="10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnVolverTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+            </Frame>
+
+            <!-- Label "Notas" -->
+            <Label Grid.Row="1" Text="Registrar Alarma" FontSize="34" FontAttributes="Bold" TextColor="White"
+                   HorizontalOptions="Center" FontFamily="Lemon"/>
+
+            <!-- Contenido -->
+            <Frame Grid.Row="2" BackgroundColor="#D9D9D9" CornerRadius="40" Margin="0,0,0,10">
+                <ScrollView>
+                    <StackLayout Padding="20">
+                        <Label Text="Título del Material:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
+                        <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
+                            <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" IsEnabled="False" TextColor="Black"/>
+                        </Frame>
+
+                        <StackLayout HorizontalOptions="StartAndExpand">
+                            <Label Text="Hora de Programación:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
+                            <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
+                                <controls:CustomTimePicker BackgroundColor="Transparent" HorizontalOptions="Center" FontFamily="Formularios" FontSize="22" 
+                                                       TextColor="Black"/>
+                            </Frame>
+                        </StackLayout>
+
+                        <Label Text="Mensaje de la Alarma:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
+                        <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
+                            <controls:CustomEditor BackgroundColor="Transparent" HeightRequest="100" FontFamily="Formularios" FontSize="22" 
+                                                   TextColor="Black"/>
+                        </Frame>
+
+                        <Label Text="Tipo Alarma:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
+                        <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="0">
+                            <controls:CustomEntry BackgroundColor="Transparent"  FontFamily="Formularios" IsEnabled="False"
+                                               FontSize="22" TextColor="Black"/>
+                        </Frame>
+
+                        
+
+                        <Button Text="Crear Alarma" BackgroundColor="#A1A1A1" CornerRadius="40" Margin="70,20,70,0" TextColor="Black"
+                            FontFamily="Formularios" FontAttributes="Bold" FontSize="20"/>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+
+            <!-- Barra Inferior -->
+            <Frame Grid.Row="3" Padding="15" BackgroundColor="#D9D9D9" CornerRadius="40" BorderColor="Transparent">
+                <Grid BackgroundColor="#D9D9D9" HeightRequest="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="notificacion.png" WidthRequest="50" HeightRequest="50" Grid.Column="0"
+                            VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Image Source="mas.png" WidthRequest="50" HeightRequest="50" Grid.Column="1"
+                            VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Image Source="nuevacuenta.png" WidthRequest="50" HeightRequest="50" Grid.Column="2"
+                            VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

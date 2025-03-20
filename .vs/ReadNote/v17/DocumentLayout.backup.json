@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\acost\\source\\repos\\ReadNote\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\acost\\source\\repos\\readnote\\readnote\\vistas\\alarmas\\consultaralarmasvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\alarmas\\consultaralarmasvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\acost\\source\\repos\\readnote\\readnote\\vistas\\alarmas\\consultaralarmasvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\alarmas\\consultaralarmasvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\acost\\source\\repos\\readnote\\readnote\\vistas\\colecciones\\consultarcoleccionvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\colecciones\\consultarcoleccionvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\acost\\source\\repos\\readnote\\readnote\\vistas\\colecciones\\consultarcoleccionvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\colecciones\\consultarcoleccionvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsultarAlarmasVista.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acost\\source\\repos\\ReadNote\\ReadNote\\Vistas\\Alarmas\\ConsultarAlarmasVista.xaml.cs",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\Alarmas\\ConsultarAlarmasVista.xaml.cs",
+              "ToolTip": "C:\\Users\\acost\\source\\repos\\ReadNote\\ReadNote\\Vistas\\Alarmas\\ConsultarAlarmasVista.xaml.cs",
+              "RelativeToolTip": "ReadNote\\Vistas\\Alarmas\\ConsultarAlarmasVista.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwDYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T09:31:54.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsultarAlarmasVista.xaml",
+              "DocumentMoniker": "C:\\Users\\acost\\source\\repos\\ReadNote\\ReadNote\\Vistas\\Alarmas\\ConsultarAlarmasVista.xaml",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\Alarmas\\ConsultarAlarmasVista.xaml",
+              "ToolTip": "C:\\Users\\acost\\source\\repos\\ReadNote\\ReadNote\\Vistas\\Alarmas\\ConsultarAlarmasVista.xaml",
+              "RelativeToolTip": "ReadNote\\Vistas\\Alarmas\\ConsultarAlarmasVista.xaml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-19T09:31:53.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConsultarColeccionVista.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acost\\source\\repos\\ReadNote\\ReadNote\\Vistas\\Colecciones\\ConsultarColeccionVista.xaml.cs",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\Colecciones\\ConsultarColeccionVista.xaml.cs",
+              "ToolTip": "C:\\Users\\acost\\source\\repos\\ReadNote\\ReadNote\\Vistas\\Colecciones\\ConsultarColeccionVista.xaml.cs",
+              "RelativeToolTip": "ReadNote\\Vistas\\Colecciones\\ConsultarColeccionVista.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwDYAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T09:31:41.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConsultarColeccionVista.xaml",
+              "DocumentMoniker": "C:\\Users\\acost\\source\\repos\\ReadNote\\ReadNote\\Vistas\\Colecciones\\ConsultarColeccionVista.xaml",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\Colecciones\\ConsultarColeccionVista.xaml",
+              "ToolTip": "C:\\Users\\acost\\source\\repos\\ReadNote\\ReadNote\\Vistas\\Colecciones\\ConsultarColeccionVista.xaml",
+              "RelativeToolTip": "ReadNote\\Vistas\\Colecciones\\ConsultarColeccionVista.xaml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-19T09:31:35.836Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
