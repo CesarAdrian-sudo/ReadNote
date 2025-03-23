@@ -47,20 +47,28 @@
                    VerticalOptions="FillAndExpand" Padding="10">
                 <ScrollView>
                     <StackLayout Orientation="Vertical">
-                        <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="10" Margin="0,20,0,0" HeightRequest="60">
-                            <Label Text="Ciencia" FontAttributes="Italic,Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Lemon" FontSize="30" TextColor="Black"/>
-                        </Frame>
-                        <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="10" Margin="0,20,0,0" HeightRequest="60">
-                            <Label Text="Literatura" FontAttributes="Italic,Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Lemon" FontSize="30" TextColor="Black"/>
-                        </Frame>
+                      
+                        <ListView x:Name="ListaColeccion"
+                         HasUnevenRows="True"
+                        SeparatorVisibility="None">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="10"
+                                           Margin="0,20,0,0" HeightRequest="60">
+                                            <Label Text="{Binding Nombre}"
+                                              FontAttributes="Italic,Bold"
+                                              HorizontalOptions="Center"
+                                              VerticalOptions="Center"
+                                              FontFamily="Lemon"
+                                              FontSize="30"
+                                              TextColor="Black"/>
+                                        </Frame>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
 
-                        <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="10" Margin="0,20,0,0" HeightRequest="60">
-                            <Label Text="Educativo" FontAttributes="Italic,Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Lemon" FontSize="30" TextColor="Black"/>
-                        </Frame>
-
-                        <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="10" Margin="0,20,0,0" HeightRequest="60">
-                            <Label Text="Fantasía" FontAttributes="Italic,Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Lemon" FontSize="30" TextColor="Black"/>
-                        </Frame>
                     </StackLayout>
                 </ScrollView>
             </Frame>
