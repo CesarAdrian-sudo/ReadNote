@@ -31,31 +31,31 @@
                     <StackLayout Padding="20">
                         <Label Text="Nombre de la Colección:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                         <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
-                            <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" TextColor="Black"/>
+                            <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" TextColor="Black" x:Name="txtNombre"/>
                         </Frame>
 
                         <Label Text="Descripcion:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                         <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="0">
                             <controls:CustomEditor BackgroundColor="Transparent" HeightRequest="100" FontFamily="Formularios"
-                                        FontSize="22" TextColor="Black"/>
+                                        FontSize="22" TextColor="Black" x:Name="txtDescripcion" />
                         </Frame>
 
                         <Label Text="Tipo de Material:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                         <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
-                            <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" FontSize="22" IsEnabled="False"
-                                        HorizontalTextAlignment="Start" TextColor="Black"/>
+                            <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" FontSize="22" IsEnabled="True"
+                                        HorizontalTextAlignment="Start" TextColor="Black" x:Name="txtTipos" />
                         </Frame>
 
                         <Label Text="Contenido Total Registrado:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                         <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
                             <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" FontSize="22" 
-                                                  HorizontalTextAlignment="Start" TextColor="Black"/>
+                                                  HorizontalTextAlignment="Start" TextColor="Black" x:Name="txtContador" Keyboard="Numeric" />
                         </Frame>
 
 
 
                         <Button Text="Crear Colección" BackgroundColor="#A1A1A1" CornerRadius="40" Margin="50,20,50,0" TextColor="Black"
-                                FontFamily="Formularios" FontAttributes="Bold" FontSize="20"/>
+                                FontFamily="Formularios" FontAttributes="Bold" FontSize="20" x:Name="btnCrear" />
                     </StackLayout>
                 </ScrollView>
             </Frame>
