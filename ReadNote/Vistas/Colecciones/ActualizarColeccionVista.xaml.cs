@@ -32,6 +32,7 @@ namespace ReadNote.Vistas.Colecciones
             IdColeccion = id;
             btnActualizar.Clicked += BtnActualizar_Clicked;
             btnEliminar.Clicked += BtnEliminar_Clicked;
+            btnExaminar.Clicked += BtnExaminar_Clicked;
 
             // Asignar los valores directamente a los Entry
             txtNombre.Text = nom;
@@ -58,7 +59,10 @@ namespace ReadNote.Vistas.Colecciones
             await Navigation.PopAsync();
         }
 
-
+        private async void BtnExaminar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Vistas.MaterialColeccion.MaterialColeccionInicioVista());
+        }
         private async void BtnEliminar_Clicked(object sender, EventArgs e)
         {
             bool respuesta = await DisplayAlert("Confirmar", "¿Deseas eliminar esta colección?", "Sí", "No");

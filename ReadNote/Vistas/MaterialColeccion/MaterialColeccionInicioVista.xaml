@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReadNote.Vistas.MaterialColeccion.MaterialColeccionInicioVista"
+             BackgroundColor="#3A2121">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Tamaños de fuente dinámicos -->
+            <OnPlatform x:Key="HeaderFontSize" x:TypeArguments="x:Double">
+                <On Platform="iOS" Value="24"/>
+                <On Platform="Android" Value="30"/>
+            </OnPlatform>
+            <OnPlatform x:Key="ButtonFontSize" x:TypeArguments="x:Double">
+                <On Platform="iOS" Value="16"/>
+                <On Platform="Android" Value="14"/>
+            </OnPlatform>
+
+            <!-- Tamaños dinámicos para íconos y botones -->
+            <x:Double x:Key="IconSize">50</x:Double>
+            <x:Double x:Key="ButtonSize">200</x:Double>
+            <x:Double x:Key="ButtonHeight">120</x:Double>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <Grid RowDefinitions="Auto,*,Auto" Padding="10">
+            <!-- Barra Superior -->
+            <Frame Padding="5" BackgroundColor="#D9D9D9" CornerRadius="30" BorderColor="Transparent">
+                <Grid BackgroundColor="LightGray" HeightRequest="50">
+                    <Image Source="volver.png" WidthRequest="{DynamicResource IconSize}" HeightRequest="{DynamicResource IconSize}"
+                        VerticalOptions="Center" HorizontalOptions="Start" Margin="10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnVolverTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+            </Frame>
+
+            <!-- Contenido Principal -->
+            <Frame Grid.Row="1" Padding="15" BackgroundColor="#D9D9D9" CornerRadius="40" BorderColor="Transparent" Margin="0,40,0,20">
+                <StackLayout HeightRequest="400">
+                    <Label Text="Colección" FontSize="35" FontAttributes="Bold" 
+                   HorizontalOptions="Center" Margin="30" TextColor="Black" FontFamily="Lemon" HorizontalTextAlignment="Center"/>
+
+                    <StackLayout Spacing="30" HorizontalOptions="Center">
+                        <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="10" WidthRequest="180" HeightRequest="250">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Image Source="addColeccion.png" WidthRequest="80" HeightRequest="80"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label TextColor="Black" FontFamily="Lemon" HorizontalTextAlignment="Center" Text="Agregar Materiales a la colección" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnAgregarMaterialColeccionTapped"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+
+                        <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="10" WidthRequest="180" HeightRequest="250">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Image Source="conColeccion.png" WidthRequest="80" HeightRequest="80"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label TextColor="Black" HorizontalTextAlignment="Center" FontFamily="Lemon" Text="Consultar materiales de la colección" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnConsultarMaterialColeccionTapped"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Barra Inferior -->
+            <Frame Grid.Row="2" Padding="15" BackgroundColor="#D9D9D9" CornerRadius="40" BorderColor="Transparent">
+                <Grid BackgroundColor="#D9D9D9" HeightRequest="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="notificacion.png" WidthRequest="50" HeightRequest="50" Grid.Column="0"
+                        VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Image Source="mas.png" WidthRequest="50" HeightRequest="50" Grid.Column="1"
+                        VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Image Source="nuevacuenta.png" WidthRequest="50" HeightRequest="50" Grid.Column="2"
+                        VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
