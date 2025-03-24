@@ -3682,17 +3682,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ferch\\.nuget\\packages\\": {},
+    "C:\\Users\\kr500\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferch\\Source\\Repos\\ReadNote\\ReadNote.Android\\ReadNote.Android.csproj",
+      "projectUniqueName": "C:\\Users\\kr500\\Source\\Repos\\ReadNote\\ReadNote.Android\\ReadNote.Android.csproj",
       "projectName": "ReadNote.Android",
-      "projectPath": "C:\\Users\\ferch\\Source\\Repos\\ReadNote\\ReadNote.Android\\ReadNote.Android.csproj",
-      "packagesPath": "C:\\Users\\ferch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferch\\Source\\Repos\\ReadNote\\ReadNote.Android\\obj\\",
+      "projectPath": "C:\\Users\\kr500\\Source\\Repos\\ReadNote\\ReadNote.Android\\ReadNote.Android.csproj",
+      "packagesPath": "C:\\Users\\kr500\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kr500\\Source\\Repos\\ReadNote\\ReadNote.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -3700,7 +3700,7 @@
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ferch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kr500\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3714,8 +3714,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\ferch\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj": {
-              "projectPath": "C:\\Users\\ferch\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj"
+            "C:\\Users\\kr500\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj": {
+              "projectPath": "C:\\Users\\kr500\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj"
             }
           }
         }

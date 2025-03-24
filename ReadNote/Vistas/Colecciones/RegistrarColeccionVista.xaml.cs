@@ -16,13 +16,19 @@ namespace ReadNote.Vistas.Colecciones
     public partial class RegistrarColeccionVista : ContentPage
     {
         private SQLiteAsyncConnection conexion;
+
         public RegistrarColeccionVista()
         {
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
             conexion = DependencyService.Get<ISQLiteDB>().GetConnection();
+
+            // 📌 Asegura que la tabla se cree antes de usarla
+            conexion.CreateTableAsync<T_Coleccion>().Wait();
+
             btnCrear.Clicked += BtnCrear_Clicked;
         }
+
         private async void BtnCrear_Clicked(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtTipos.Text))
@@ -46,7 +52,6 @@ namespace ReadNote.Vistas.Colecciones
             // Navegar automáticamente a la vista de consulta
             await Navigation.PushAsync(new ConsultarColeccionVista());
         }
-
 
         void limpiarFormulario()
         {

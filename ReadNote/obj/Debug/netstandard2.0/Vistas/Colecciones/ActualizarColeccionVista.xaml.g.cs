@@ -32,6 +32,9 @@ namespace ReadNote.Vistas.Colecciones {
         private global::Xamarin.Forms.Button btnActualizar;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button btnExaminar;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Button btnEliminar;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -42,6 +45,7 @@ namespace ReadNote.Vistas.Colecciones {
             txtTipos = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "txtTipos");
             txtContador = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "txtContador");
             btnActualizar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnActualizar");
+            btnExaminar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnExaminar");
             btnEliminar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnEliminar");
         }
     }
