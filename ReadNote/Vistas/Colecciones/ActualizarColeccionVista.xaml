@@ -54,15 +54,15 @@
                         <Grid ColumnDefinitions="*,*" Margin="0,20,0,0">
                             <Button Text="Actualizar" BackgroundColor="#A1A1A1" CornerRadius="40"
             TextColor="Black" FontFamily="Formularios" FontAttributes="Bold" 
-            FontSize="20" x:Name="btnActualizar" Grid.Column="0" Margin="0,0,5,0"/>
+            FontSize="16" x:Name="btnActualizar" Grid.Column="0" Margin="0,0,5,0"/>
 
                             <Button Text="Examinar" BackgroundColor="#A1A1A1" CornerRadius="40"
             TextColor="Black" FontFamily="Formularios" FontAttributes="Bold"
-            FontSize="20" x:Name="btnExaminar" Grid.Column="1" Margin="5,0,0,0"/>
+            FontSize="16" x:Name="btnExaminar" Grid.Column="1" Margin="5,0,0,0"/>
                             
                             <Button Text="Eliminar" BackgroundColor="#A1A1A1" CornerRadius="40"
             TextColor="Black" FontFamily="Formularios" FontAttributes="Bold"
-            FontSize="20" x:Name="btnEliminar" Grid.Column="2" Margin="5,0,0,0"/>
+            FontSize="16" x:Name="btnEliminar" Grid.Column="2" Margin="5,0,0,0"/>
                         </Grid>
 
                       

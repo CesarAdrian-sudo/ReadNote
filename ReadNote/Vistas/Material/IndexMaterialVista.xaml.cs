@@ -65,5 +65,21 @@ namespace ReadNote.Vistas.Material
         {
             await Navigation.PushAsync(new Vistas.Material.Actual.InicioMatActVista());
         }
+        private void OnMasTapped(object sender, EventArgs e)
+        {
+            popupMenu.IsVisible = !popupMenu.IsVisible;
+        }
+
+        private async void OnNotaRapidaTapped(object sender, EventArgs e)
+        {
+            popupMenu.IsVisible = false;
+            await Navigation.PushAsync(new Vistas.Notas.RegistrarNotaVista());
+        }
+
+        private async void OnMaterialFuturoTapped(object sender, EventArgs e)
+        {
+            popupMenu.IsVisible = false;
+            await Navigation.PushAsync(new Vistas.Material.Actual.RegistrarMatActVista());
+        }
     }
 }

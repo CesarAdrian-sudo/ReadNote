@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638783456380814091
+_nugetassetstimestamp=638783787357409359
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=c:\users\kr500\source\repos\readnote\readnote.android\readnote.android.csproj
+projectfullpath=c:\users\acost\source\repos\readnote\readnote.android\readnote.android.csproj

@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = ReadNote
-build_property.ProjectDir = C:\Users\kr500\Source\Repos\ReadNote\ReadNote\
+build_property.ProjectDir = C:\Users\acost\Source\Repos\ReadNote\ReadNote\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

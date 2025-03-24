@@ -38,6 +38,8 @@ namespace ReadNote.Vistas.Colecciones
             txtDescripcion.Text = des;
             txtTipos.Text = tipo;
             txtContador.Text = cont;
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void BtnActualizar_Clicked(object sender, EventArgs e)
@@ -73,7 +75,7 @@ namespace ReadNote.Vistas.Colecciones
 
         private async void OnVolverTapped(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PushAsync(new Vistas.Colecciones.ConsultarColeccionVista());
         }
 
     }

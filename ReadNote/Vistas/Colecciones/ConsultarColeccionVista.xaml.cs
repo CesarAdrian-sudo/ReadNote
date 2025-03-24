@@ -26,7 +26,6 @@ namespace ReadNote.Vistas.Colecciones
             InitializeComponent();
             conexion = DependencyService.Get<ISQLiteDB>().GetConnection();
             ListaColeccion.ItemSelected += ListaColeccion_ItemSelected;
-
             CrearBaseDeDatos(); // Asegura que la tabla exista antes de usarla
 
             ListaColeccion.ItemSelected += ListaColeccion_ItemSelected;
@@ -54,7 +53,7 @@ namespace ReadNote.Vistas.Colecciones
             try
             {
 
-                Navigation.PushAsync(new ActualizarColeccionVista(id, nom,des, tipo,cont));
+                Navigation.PushAsync(new ActualizarColeccionVista(id, nom, des, tipo, cont));
             }
             catch (Exception)
             {
@@ -111,6 +110,33 @@ namespace ReadNote.Vistas.Colecciones
             ListaColeccion.ItemsSource = TablaColeccion;
             base.OnAppearing();
             await Navigation.PushAsync(new Vistas.Colecciones.ColeccionesInicioVista());
+        }
+
+        private void OnMasTapped(object sender, EventArgs e)
+        {
+            popupMenu.IsVisible = !popupMenu.IsVisible;
+        }
+
+        private async void OnNotaRapidaTapped(object sender, EventArgs e)
+        {
+            popupMenu.IsVisible = false;
+            await Navigation.PushAsync(new Vistas.Notas.RegistrarNotaVista());
+        }
+
+        private async void OnMaterialFuturoTapped(object sender, EventArgs e)
+        {
+            popupMenu.IsVisible = false;
+            await Navigation.PushAsync(new Vistas.Material.Actual.RegistrarMatActVista());
+        }
+
+        private async void OnNotificacionTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Vistas.MenuInferior.NotificacionVista());
+        }
+
+        private async void OnCuentaTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Vistas.MenuInferior.CuentaVista());
         }
     }
 }

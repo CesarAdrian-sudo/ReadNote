@@ -119,13 +119,60 @@
                     </Grid.ColumnDefinitions>
 
                     <Image Source="notificacion.png" WidthRequest="50" HeightRequest="50" Grid.Column="0"
-                           VerticalOptions="Center" HorizontalOptions="Center"/>
+                           VerticalOptions="Center" HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnNotificacionTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Image Source="mas.png" WidthRequest="50" HeightRequest="50" Grid.Column="1"
-                           VerticalOptions="Center" HorizontalOptions="Center"/>
+                           VerticalOptions="Center" HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMasTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Image Source="nuevacuenta.png" WidthRequest="50" HeightRequest="50" Grid.Column="2"
-                           VerticalOptions="Center" HorizontalOptions="Center"/>
+                           VerticalOptions="Center" HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnCuentaTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                 </Grid>
             </Frame>
+
+            <!-- MENU FLOTANTE DEL BOTON "+"-->
+            <AbsoluteLayout Grid.Row="3" IsVisible="False" x:Name="popupMenu">
+                <Frame BackgroundColor="#AFAFAF" CornerRadius="20"
+                       WidthRequest="200" HeightRequest="250"
+                       AbsoluteLayout.LayoutBounds=".5,.0,AutoSize,AutoSize"
+                       AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame BackgroundColor="#D9D9D9" CornerRadius="20"
+                               WidthRequest="100" HeightRequest="100">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Image Source="notaRapida.png" WidthRequest="40" HeightRequest="40"/>
+                                <Label Text="Nota Rápida" FontAttributes="Bold" FontSize="14" FontFamily="Lemon" HorizontalTextAlignment="Center" TextColor="Black"
+                                       HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnNotaRapidaTapped"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+
+                        <Frame BackgroundColor="#D9D9D9" CornerRadius="20"
+                               WidthRequest="100" HeightRequest="100">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Image Source="MaterialFut.png" WidthRequest="40" HeightRequest="40"/>
+                                <Label Text="Material Futuro" FontAttributes="Bold" FontSize="14" FontFamily="Lemon" HorizontalTextAlignment="Center" TextColor="Black"
+                                       HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnMaterialFuturoTapped"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </AbsoluteLayout>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>

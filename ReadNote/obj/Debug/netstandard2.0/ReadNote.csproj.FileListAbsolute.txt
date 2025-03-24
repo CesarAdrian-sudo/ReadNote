@@ -102,3 +102,6 @@ C:\Users\kr500\Source\Repos\ReadNote\ReadNote\obj\Debug\netstandard2.0\XamlC.sta
 C:\Users\kr500\Source\Repos\ReadNote\ReadNote\obj\Debug\netstandard2.0\ReadNote.dll
 C:\Users\kr500\Source\Repos\ReadNote\ReadNote\obj\Debug\netstandard2.0\refint\ReadNote.dll
 C:\Users\kr500\Source\Repos\ReadNote\ReadNote\obj\Debug\netstandard2.0\ReadNote.pdb
+C:\Users\acost\Source\Repos\ReadNote\ReadNote\obj\Debug\netstandard2.0\ReadNote.sourcelink.json
+C:\Users\acost\Source\Repos\ReadNote\ReadNote\obj\Debug\netstandard2.0\Vistas\MenuInferior\CuentaVista.xaml.g.cs
+C:\Users\acost\Source\Repos\ReadNote\ReadNote\obj\Debug\netstandard2.0\Vistas\MenuInferior\NotificacionVista.xaml.g.cs

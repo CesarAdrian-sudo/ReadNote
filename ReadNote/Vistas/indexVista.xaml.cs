@@ -51,6 +51,33 @@ namespace ReadNote.Vistas
             await Navigation.PushAsync(new Vistas.Notas.InicioNotasVista());
         }
 
+        private void OnMasTapped(object sender, EventArgs e)
+        {
+            popupMenu.IsVisible = !popupMenu.IsVisible;
+        }
+
+        private async void OnNotaRapidaTapped(object sender, EventArgs e)
+        {
+            popupMenu.IsVisible = false;
+            await Navigation.PushAsync(new Vistas.Notas.RegistrarNotaVista());
+        }
+
+        private async void OnMaterialFuturoTapped(object sender, EventArgs e)
+        {
+            popupMenu.IsVisible = false;
+            await Navigation.PushAsync(new Vistas.Material.Actual.RegistrarMatActVista());
+        }
+
+        private async void OnNotificacionTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Vistas.MenuInferior.NotificacionVista());
+        }
+
+        private async void OnCuentaTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Vistas.MenuInferior.CuentaVista());
+        }
+
         protected override void OnSizeAllocated(double width, double height)
         {
             base.OnSizeAllocated(width, height);
