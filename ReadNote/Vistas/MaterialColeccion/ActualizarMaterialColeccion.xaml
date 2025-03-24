@@ -1,12 +1,143 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ReadNote.Vistas.MaterialColeccion.ActualizarMaterialColeccion">
+             x:Class="ReadNote.Vistas.MaterialColeccion.ActualizarMaterialColeccion"
+             BackgroundColor="#3A2121">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Tamaños de fuente dinámicos -->
+            <OnPlatform x:Key="HeaderFontSize" x:TypeArguments="x:Double">
+                <On Platform="iOS" Value="24"/>
+                <On Platform="Android" Value="30"/>
+            </OnPlatform>
+            <OnPlatform x:Key="ButtonFontSize" x:TypeArguments="x:Double">
+                <On Platform="iOS" Value="16"/>
+                <On Platform="Android" Value="14"/>
+            </OnPlatform>
+
+            <!-- Tamaños dinámicos para íconos y botones -->
+            <x:Double x:Key="IconSize">50</x:Double>
+            <x:Double x:Key="ButtonSize">200</x:Double>
+            <x:Double x:Key="ButtonHeight">120</x:Double>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Barra Superior -->
+            <Frame Grid.Row="0" Padding="5" BackgroundColor="#D9D9D9" CornerRadius="30" BorderColor="Transparent">
+                <Grid BackgroundColor="LightGray" HeightRequest="50">
+                    <Image Source="volver.png" WidthRequest="{DynamicResource IconSize}" HeightRequest="{DynamicResource IconSize}"
+                   VerticalOptions="Center" HorizontalOptions="Start" Margin="10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnVolverTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+            </Frame>
+
+            <!-- Título  -->
+            <Label Grid.Row="1" Text="Materiales de la Colección" FontSize="30" FontAttributes="Bold" TextColor="White" 
+           HorizontalOptions="Center" Margin="0,0,0,20" FontFamily="Lemon"/>
+
+            <!-- Notas Consultadas -->
+            <Frame Grid.Row="2" BackgroundColor="#D9D9D9" CornerRadius="40"
+           VerticalOptions="FillAndExpand" Padding="10">
+                <ScrollView>
+                    <ListView x:Name="ListaMaterialColeccion"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="10"
+                                   Margin="0,20,0,0" HeightRequest="60">
+                                        <Label Text="{Binding Nombre}"
+                                       FontAttributes="Italic,Bold"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       FontFamily="Lemon"
+                                       FontSize="30"
+                                       TextColor="Black"/>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollView>
+            </Frame>
+
+            <!-- Barra Inferior -->
+            <Frame Grid.Row="3" Padding="15" BackgroundColor="#D9D9D9" CornerRadius="40" BorderColor="Transparent" Margin="0,15,0,0">
+                <Grid BackgroundColor="#D9D9D9" HeightRequest="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="notificacion.png" WidthRequest="50" HeightRequest="50" Grid.Column="0"
+                   VerticalOptions="Center" HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnNotificacionTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="mas.png" WidthRequest="50" HeightRequest="50" Grid.Column="1"
+                   VerticalOptions="Center" HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMasTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="nuevacuenta.png" WidthRequest="50" HeightRequest="50" Grid.Column="2"
+                   VerticalOptions="Center" HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnCuentaTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+            </Frame>
+
+            <!-- MENU FLOTANTE DEL BOTON "+"-->
+            <AbsoluteLayout Grid.Row="2" IsVisible="False" x:Name="popupMenu">
+                <Frame BackgroundColor="#AFAFAF" CornerRadius="20"
+                WidthRequest="200" HeightRequest="250"
+                AbsoluteLayout.LayoutBounds=".5,.0,AutoSize,AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame BackgroundColor="#D9D9D9" CornerRadius="20"
+           WidthRequest="100" HeightRequest="100">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Image Source="notaRapida.png" WidthRequest="40" HeightRequest="40"/>
+                                <Label Text="Nota Rápida" FontAttributes="Bold" FontSize="14" FontFamily="Lemon" HorizontalTextAlignment="Center" TextColor="Black"
+                   HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnNotaRapidaTapped"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+
+                        <Frame BackgroundColor="#D9D9D9" CornerRadius="20"
+           WidthRequest="100" HeightRequest="100">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Image Source="MaterialFut.png" WidthRequest="40" HeightRequest="40"/>
+                                <Label Text="Material Futuro" FontAttributes="Bold" FontSize="14" FontFamily="Lemon" HorizontalTextAlignment="Center" TextColor="Black"
+                   HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnMaterialFuturoTapped"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </AbsoluteLayout>
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
