@@ -45,7 +45,7 @@
             </Frame>
 
             <!-- Título  -->
-            <Label Grid.Row="1" Text="Materiales Existentes" FontSize="30" FontAttributes="Bold" TextColor="White" 
+            <Label Grid.Row="1" Text="Mis Materiales" FontSize="30" FontAttributes="Bold" TextColor="White" 
                HorizontalOptions="Center" Margin="0,0,0,20" FontFamily="Lemon"/>
 
             <!-- Notas Consultadas -->
@@ -60,7 +60,7 @@
                                 <ViewCell>
                                     <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="10"
                                        Margin="0,20,0,0" HeightRequest="60">
-                                        <Label Text="{Binding Nombre}"
+                                        <Label Text="{Binding NombreMaterial}"
                                            FontAttributes="Italic,Bold"
                                            HorizontalOptions="Center"
                                            VerticalOptions="Center"

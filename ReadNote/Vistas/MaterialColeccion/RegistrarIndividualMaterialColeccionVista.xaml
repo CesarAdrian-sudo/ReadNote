@@ -35,20 +35,20 @@
                         <Label Text="Descripcion:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                         <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="0">
                             <controls:CustomEditor BackgroundColor="Transparent" HeightRequest="100" FontFamily="Formularios"
-                               FontSize="22" TextColor="Black" x:Name="txtDescripcion" IsEnabled="False" />
+                               FontSize="22" TextColor="Black" x:Name="txtDescripcion" IsEnabled="True" />
                         </Frame>
 
-                        <Label Text="Tipo de Material:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
+                        <Label Text="No. Páginas:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                         <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
-                            <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" FontSize="22" IsEnabled="False"
-                               HorizontalTextAlignment="Start" TextColor="Black" x:Name="txtTipos" />
+                            <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" FontSize="22" IsEnabled="True"
+                               HorizontalTextAlignment="Start" TextColor="Black" x:Name="txtPaginas" />
                         </Frame>
 
 
                         <Grid ColumnDefinitions="*,*" Margin="0,20,0,0">
                             <Button Text="Añadir" BackgroundColor="#A1A1A1" CornerRadius="40"
                             TextColor="Black" FontFamily="Formularios" FontAttributes="Bold" 
-                            FontSize="16" x:Name="btnAñadir" Grid.Column="0" Margin="0,0,5,0"/>
+                            FontSize="16" x:Name="btnAñadir" Grid.Column="0" Margin="0,0,5,0" VerticalOptions="Center" HorizontalOptions="Center"/>
                         </Grid>
 
 

@@ -6,16 +6,39 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using SQLite;
+using ReadNote.Tablas;
+using ReadNote.Datos;
+using ReadNote.Vistas.MaterialColeccion;
 namespace ReadNote.Vistas.MaterialColeccion
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegistrarIndividualMaterialColeccionVista : ContentPage
     {
+        private SQLiteAsyncConnection conexion;
         public RegistrarIndividualMaterialColeccionVista()
         {
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+            conexion = DependencyService.Get<ISQLiteDB>().GetConnection();
+            btnAñadir.Clicked += BtnAñadir_Clicked;
+        }
+
+        private async void BtnAñadir_Clicked(object sender, EventArgs e)
+        {
+            var datos = new T_Material
+            {
+                NombreMaterial = txtNombre.Text,
+                Descripcion = txtDescripcion.Text,
+                no_paginas = Convert.ToInt32(txtPaginas.Text)
+            };
+            var datos1 = new T_MaterialColeccion
+            {
+                Fecha = DateTime.Today,
+                Hora = DateTime.Now
+            };
+            conexion.InsertAsync(datos);
+            DisplayAlert("Registro", "Tu material ha sido registrado a la colección", "OK");
         }
         protected override void OnSizeAllocated(double width, double height)
         {

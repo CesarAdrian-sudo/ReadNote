@@ -146,3 +146,5 @@ C:\Users\kr500\source\repos\ReadNote2\ReadNote\obj\Debug\netstandard2.0\XamlC.st
 C:\Users\kr500\source\repos\ReadNote2\ReadNote\obj\Debug\netstandard2.0\ReadNote.dll
 C:\Users\kr500\source\repos\ReadNote2\ReadNote\obj\Debug\netstandard2.0\refint\ReadNote.dll
 C:\Users\kr500\source\repos\ReadNote2\ReadNote\obj\Debug\netstandard2.0\ReadNote.pdb
+C:\Users\kr500\source\repos\ReadNote2\ReadNote\obj\Debug\netstandard2.0\Vistas\MaterialColeccion\GestionarIndividualMaterialColeccionVista.xaml.g.cs
+C:\Users\kr500\source\repos\ReadNote2\ReadNote\obj\Debug\netstandard2.0\Vistas\MaterialColeccion\RegistrarIndividualMaterialColeccionVista.xaml.g.cs

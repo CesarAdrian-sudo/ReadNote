@@ -23,7 +23,7 @@ namespace ReadNote.Vistas.MaterialColeccion {
         private global::ReadNote.CustomControls.CustomEditor txtDescripcion;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::ReadNote.CustomControls.CustomEntry txtTipos;
+        private global::ReadNote.CustomControls.CustomEntry txtPaginas;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Button btnAñadir;
@@ -33,7 +33,7 @@ namespace ReadNote.Vistas.MaterialColeccion {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(RegistrarIndividualMaterialColeccionVista));
             txtNombre = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "txtNombre");
             txtDescripcion = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEditor>(this, "txtDescripcion");
-            txtTipos = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "txtTipos");
+            txtPaginas = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "txtPaginas");
             btnAñadir = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnAñadir");
         }
     }

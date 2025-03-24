@@ -9,9 +9,9 @@ namespace ReadNote.Tablas
     {
         [PrimaryKey, AutoIncrement]
         public int IdMaterialColeccion { get; set; }
-        [MaxLength(255)]
+        [AutoIncrement,MaxLength(255)]
         public int Id_Material { get; set; }
-        [MaxLength(255)]
+        [AutoIncrement,MaxLength(255)]
         public int Id_Coleccion { get; set; }
         [MaxLength(255)]
         public DateTime Fecha { get; set; }

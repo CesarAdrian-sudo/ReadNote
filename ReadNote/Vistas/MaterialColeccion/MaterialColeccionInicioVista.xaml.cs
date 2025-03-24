@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SQLite;
+using ReadNote.Datos;
+using ReadNote.Tablas;
 
 namespace ReadNote.Vistas.MaterialColeccion
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MaterialColeccionInicioVista : ContentPage
     {
+        private SQLiteAsyncConnection conexion;
         public MaterialColeccionInicioVista()
         {
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+            conexion = DependencyService.Get<ISQLiteDB>().GetConnection();
         }
         protected override void OnSizeAllocated(double width, double height)
         {
@@ -55,8 +60,9 @@ namespace ReadNote.Vistas.MaterialColeccion
         }
 
         private async void OnAgregarMaterialColeccionTapped(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Vistas.MaterialColeccion.RegistrarMaterialColeccion());
+        { 
+                await Navigation.PushAsync(new RegistrarIndividualMaterialColeccionVista());
+
         }
 
         private async void OnConsultarMaterialColeccionTapped(object sender, EventArgs e)

@@ -6,23 +6,42 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using ReadNote.Datos;
 using ReadNote.Tablas;
 using System.IO;
 using System.Collections.ObjectModel;
 using ReadNote;
 using SQLite;
+using ReadNote.Vistas.Colecciones;
 namespace ReadNote.Vistas.MaterialColeccion
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegistrarMaterialColeccion : ContentPage
     {
+        private SQLiteAsyncConnection conexion;
         public RegistrarMaterialColeccion()
         {
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+            conexion = DependencyService.Get<ISQLiteDB>().GetConnection();
+            ListaMaterialColeccion.ItemSelected += ListaMaterialColeccion_ItemSelected;
+        }
+        private void ListaMaterialColeccion_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var Obj = (T_Material)e.SelectedItem;
+            var item = Obj.IdMaterial.ToString();
+            var nom = Obj.NombreMaterial;
+            var des = Obj.Descripcion;
+            var pag = Obj.no_paginas;
+            var id = Convert.ToInt32(item);
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
         protected override void OnSizeAllocated(double width, double height)
         {
