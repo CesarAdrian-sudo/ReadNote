@@ -136,6 +136,11 @@
     <AndroidResource Include="Resources\drawable\notaRapida.png" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fondoalarma.jpg" />
+    <AndroidResource Include="Resources\drawable\fondocoleccion.jpeg" />
+    <AndroidResource Include="Resources\drawable\fondoindex.jpg" />
+    <AndroidResource Include="Resources\drawable\Fondomaterial.jpg" />
+    <AndroidResource Include="Resources\drawable\fondonota.jpg" />
     <Content Include="Resources\mipmap-anydpi-v26\ic_ReadNote.xml" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_ReadNote.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_ReadNote_adaptive_back.png" />

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:ReadNote.CustomControls"
              x:Class="ReadNote.Vistas.Material.Actual.RegistrarMatActVista"
-             BackgroundColor="#3A2121">
+             BackgroundImageSource="Fondomaterial">
 
     <ContentPage.Content>
         <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="10">
