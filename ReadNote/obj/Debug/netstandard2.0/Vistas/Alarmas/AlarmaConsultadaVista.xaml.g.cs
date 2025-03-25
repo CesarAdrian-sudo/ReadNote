@@ -17,8 +17,16 @@ namespace ReadNote.Vistas.Alarmas {
     public partial class AlarmaConsultada : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomTimePicker timeAlarma;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomEntry nombreAlarmaLabel;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AlarmaConsultada));
+            timeAlarma = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomTimePicker>(this, "timeAlarma");
+            nombreAlarmaLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "nombreAlarmaLabel");
         }
     }
 }

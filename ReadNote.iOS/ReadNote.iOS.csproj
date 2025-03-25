@@ -68,6 +68,7 @@
     <Compile Include="Renderers\CustomDatePickerRenderer.cs" />
     <Compile Include="Renderers\CustomEditorRenderer.cs" />
     <Compile Include="Renderers\CustomEntryRenderer.cs" />
+    <Compile Include="Renderers\CustomPickerRenderer.cs" />
     <Compile Include="Renderers\CustomTimePickerRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
