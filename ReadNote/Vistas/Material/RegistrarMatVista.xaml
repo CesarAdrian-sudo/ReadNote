@@ -31,32 +31,44 @@
                     <StackLayout Padding="20">
                     <Label Text="Tipo de Material:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                     <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
-                        <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" IsEnabled="False" TextColor="Black"/>
+                            <Picker x:Name="pickerTipoMaterial" BackgroundColor="Transparent" FontFamily="Formularios" HorizontalTextAlignment="Center" FontSize="22" TextColor="Black">
+                                <Picker.Items>
+                                    <x:String>Material Futuro</x:String>
+                                    <x:String>Material Actual</x:String>
+                                </Picker.Items>
+                            </Picker>
                     </Frame>
 
                     <Label Text="Nombre de Material:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                     <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
                         <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" FontSize="22" 
-                                          HorizontalTextAlignment="Start" TextColor="Black"/>
+                                          HorizontalTextAlignment="Start" TextColor="Black" x:Name="nombreMaterial"/>
                     </Frame>
 
                     <Label Text="Autor:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                     <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
                         <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" FontSize="22" 
-                                        HorizontalTextAlignment="Start" TextColor="Black"/>
+                                        HorizontalTextAlignment="Start" TextColor="Black" x:Name="nombreAutor"/>
                     </Frame>
 
                     <Label Text="Descripcion:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                     <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="0">
                         <controls:CustomEditor BackgroundColor="Transparent" HeightRequest="70" FontFamily="Formularios"
-                                        FontSize="22" TextColor="Black"/>
+                                        FontSize="22" TextColor="Black" x:Name="txtDescrip"/>
                     </Frame>
 
                     <Label Text="Categoria:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                     <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
-                        <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" FontSize="22" 
-                                        HorizontalTextAlignment="Start" TextColor="Black"/>
-                    </Frame>
+                            <Picker x:Name="pickerCategoria" BackgroundColor="Transparent" FontFamily="Formularios" HorizontalTextAlignment="Center" FontSize="22" TextColor="Black">
+                                <Picker.Items>
+                                    <x:String>Libro</x:String>
+                                    <x:String>Revista</x:String>
+                                    <x:String>Articulo CIentifico</x:String>
+                                    <x:String>Comic</x:String>
+                                    <x:String>Otro</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </Frame>
 
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
                         <StackLayout HorizontalOptions="StartAndExpand">
@@ -70,15 +82,19 @@
                         <StackLayout HorizontalOptions="EndAndExpand">
                             <Label Text="Estado del material:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                             <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
-                                <controls:CustomEntry BackgroundColor="Transparent" FontFamily="Formularios" FontSize="22" IsEnabled="False" 
-                                            HorizontalTextAlignment="Start" TextColor="Black"/>
-                            </Frame>
+                                    <Picker x:Name="pickerEstadoMaterial" BackgroundColor="Transparent" FontFamily="Formularios" HorizontalTextAlignment="Center" FontSize="22" TextColor="Black">
+                                        <Picker.Items>
+                                            <x:String>Lo he terminado de leer</x:String>
+                                            <x:String>No lo he terminado de leer</x:String>
+                                        </Picker.Items>
+                                    </Picker>
+                                </Frame>
                         </StackLayout>
                     </StackLayout>
 
 
                     <Button Text="Registrar" BackgroundColor="#A1A1A1" CornerRadius="40" Margin="80,20,80,0" TextColor="Black"
-                        FontFamily="Formularios" FontAttributes="Bold" FontSize="20"/>
+                        FontFamily="Formularios" FontAttributes="Bold" FontSize="20" x:Name="btnRegistrarMaterial"/>
                 </StackLayout>
             </ScrollView>
             </Frame>

@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\vistas\\material\\registrarmatvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\material\\registrarmatvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\vistas\\material\\registrarmatvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\material\\registrarmatvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C8F08-BFFB-4931-9EA6-467D1EE2404E}|ReadNote.Android\\ReadNote.Android.csproj|C:\\Users\\kr500\\source\\repos\\ReadNote2\\readnote.android\\renderers\\customentryrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C8F08-BFFB-4931-9EA6-467D1EE2404E}|ReadNote.Android\\ReadNote.Android.csproj|solutionrelative:readnote.android\\renderers\\customentryrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C8F08-BFFB-4931-9EA6-467D1EE2404E}|ReadNote.Android\\ReadNote.Android.csproj|C:\\Users\\kr500\\source\\repos\\ReadNote2\\readnote.android\\renderers\\customtimepickerrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C8F08-BFFB-4931-9EA6-467D1EE2404E}|ReadNote.Android\\ReadNote.Android.csproj|solutionrelative:readnote.android\\renderers\\customtimepickerrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\customcontrols\\customcontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\customcontrols\\customcontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\vistas\\materialcoleccion\\registrarmaterialcoleccion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\materialcoleccion\\registrarmaterialcoleccion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\vistas\\materialcoleccion\\registrarindividualmaterialcoleccionvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\materialcoleccion\\registrarindividualmaterialcoleccionvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\vistas\\materialcoleccion\\registrarindividualmaterialcoleccionvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\materialcoleccion\\registrarindividualmaterialcoleccionvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\vistas\\colecciones\\registrarcoleccionvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\colecciones\\registrarcoleccionvista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\vistas\\materialcoleccion\\materialcoleccioniniciovista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\materialcoleccion\\materialcoleccioniniciovista.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\vistas\\colecciones\\registrarcoleccionvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\vistas\\colecciones\\registrarcoleccionvista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|c:\\users\\kr500\\source\\repos\\readnote2\\readnote\\tablas\\t_material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601DF7ED-A5C1-41FE-B7E1-B3712D5E28E3}|ReadNote\\ReadNote.csproj|solutionrelative:readnote\\tablas\\t_material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +50,48 @@
       "DocumentGroups": [
         {
           "DockedHeight": 238,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistrarMatVista.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml.cs",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml.cs",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml.cs",
+              "RelativeToolTip": "ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwB0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T21:54:09.096Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegistrarMatVista.xaml",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml*",
+              "RelativeToolTip": "ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwFcAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-24T21:53:12.504Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegistrarColeccionVista.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml.cs",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml.cs",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml.cs",
+              "RelativeToolTip": "ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwCsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T21:53:35.292Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -34,42 +102,87 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegistrarIndividualMaterialColeccionVista.xaml",
-              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml",
-              "RelativeDocumentMoniker": "ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml",
-              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml",
-              "RelativeToolTip": "ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADIAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-24T17:31:34.154Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "CustomEntryRenderer.cs",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote.Android\\Renderers\\CustomEntryRenderer.cs",
+              "RelativeDocumentMoniker": "ReadNote.Android\\Renderers\\CustomEntryRenderer.cs",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote.Android\\Renderers\\CustomEntryRenderer.cs",
+              "RelativeToolTip": "ReadNote.Android\\Renderers\\CustomEntryRenderer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T22:30:52.29Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "CustomTimePickerRenderer.cs",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote.Android\\Renderers\\CustomTimePickerRenderer.cs",
+              "RelativeDocumentMoniker": "ReadNote.Android\\Renderers\\CustomTimePickerRenderer.cs",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote.Android\\Renderers\\CustomTimePickerRenderer.cs",
+              "RelativeToolTip": "ReadNote.Android\\Renderers\\CustomTimePickerRenderer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T22:30:47.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomControls.cs",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\CustomControls\\CustomControls.cs",
+              "RelativeDocumentMoniker": "ReadNote\\CustomControls\\CustomControls.cs",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\CustomControls\\CustomControls.cs",
+              "RelativeToolTip": "ReadNote\\CustomControls\\CustomControls.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T22:30:14.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "RegistrarIndividualMaterialColeccionVista.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs",
               "RelativeDocumentMoniker": "ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs",
-              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs*",
-              "RelativeToolTip": "ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCQAAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs",
+              "RelativeToolTip": "ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAlwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:26:17.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T22:17:49.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MaterialColeccionInicioVista.xaml",
-              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\MaterialColeccionInicioVista.xaml",
-              "RelativeDocumentMoniker": "ReadNote\\Vistas\\MaterialColeccion\\MaterialColeccionInicioVista.xaml",
-              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\MaterialColeccionInicioVista.xaml",
-              "RelativeToolTip": "ReadNote\\Vistas\\MaterialColeccion\\MaterialColeccionInicioVista.xaml",
-              "ViewState": "AgIAACgAAAAAAAAAAAD4vzUAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RegistrarMaterialColeccion.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\RegistrarMaterialColeccion.xaml.cs",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\MaterialColeccion\\RegistrarMaterialColeccion.xaml.cs",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\RegistrarMaterialColeccion.xaml.cs",
+              "RelativeToolTip": "ReadNote\\Vistas\\MaterialColeccion\\RegistrarMaterialColeccion.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAhwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T22:17:39.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "T_Material.cs",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Tablas\\T_Material.cs",
+              "RelativeDocumentMoniker": "ReadNote\\Tablas\\T_Material.cs",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Tablas\\T_Material.cs",
+              "RelativeToolTip": "ReadNote\\Tablas\\T_Material.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T22:03:10.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegistrarColeccionVista.xaml",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml",
+              "RelativeToolTip": "ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-24T17:24:29.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T21:53:32.982Z"
             }
           ]
         },

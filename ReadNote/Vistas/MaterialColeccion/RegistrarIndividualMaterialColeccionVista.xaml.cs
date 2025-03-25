@@ -28,9 +28,7 @@ namespace ReadNote.Vistas.MaterialColeccion
         {
             var datos = new T_Material
             {
-                NombreMaterial = txtNombre.Text,
-                Descripcion = txtDescripcion.Text,
-                no_paginas = Convert.ToInt32(txtPaginas.Text)
+
             };
             var datos1 = new T_MaterialColeccion
             {

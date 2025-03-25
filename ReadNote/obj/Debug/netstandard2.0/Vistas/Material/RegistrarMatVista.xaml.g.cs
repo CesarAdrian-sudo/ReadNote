@@ -17,8 +17,36 @@ namespace ReadNote.Vistas.Material.Actual {
     public partial class RegistrarMatActVista : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Picker pickerTipoMaterial;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomEntry nombreMaterial;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomEntry nombreAutor;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomEditor txtDescrip;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Picker pickerCategoria;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Picker pickerEstadoMaterial;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button btnRegistrarMaterial;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(RegistrarMatActVista));
+            pickerTipoMaterial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerTipoMaterial");
+            nombreMaterial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "nombreMaterial");
+            nombreAutor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "nombreAutor");
+            txtDescrip = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEditor>(this, "txtDescrip");
+            pickerCategoria = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerCategoria");
+            pickerEstadoMaterial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerEstadoMaterial");
+            btnRegistrarMaterial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnRegistrarMaterial");
         }
     }
 }

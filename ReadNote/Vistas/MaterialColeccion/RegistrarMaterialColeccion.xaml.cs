@@ -30,9 +30,7 @@ namespace ReadNote.Vistas.MaterialColeccion
         {
             var Obj = (T_Material)e.SelectedItem;
             var item = Obj.IdMaterial.ToString();
-            var nom = Obj.NombreMaterial;
-            var des = Obj.Descripcion;
-            var pag = Obj.no_paginas;
+
             var id = Convert.ToInt32(item);
             try
             {
