@@ -32,6 +32,9 @@ namespace ReadNote.Vistas.Material.Actual {
         private global::Xamarin.Forms.Picker pickerCategoria;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomEntry txtPaginas;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Picker pickerEstadoMaterial;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -45,6 +48,7 @@ namespace ReadNote.Vistas.Material.Actual {
             nombreAutor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "nombreAutor");
             txtDescrip = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEditor>(this, "txtDescrip");
             pickerCategoria = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerCategoria");
+            txtPaginas = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEntry>(this, "txtPaginas");
             pickerEstadoMaterial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerEstadoMaterial");
             btnRegistrarMaterial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnRegistrarMaterial");
         }

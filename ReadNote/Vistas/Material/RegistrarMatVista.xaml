@@ -31,7 +31,7 @@
                     <StackLayout Padding="20">
                     <Label Text="Tipo de Material:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                     <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
-                            <Picker x:Name="pickerTipoMaterial" BackgroundColor="Transparent" FontFamily="Formularios" HorizontalTextAlignment="Center" FontSize="22" TextColor="Black">
+                            <Picker x:Name="pickerTipoMaterial" BackgroundColor="Transparent" FontFamily="Formularios" HorizontalTextAlignment="Center" FontSize="22" TextColor="Black" SelectedIndexChanged="OnPickerTipoMaterialChanged">
                                 <Picker.Items>
                                     <x:String>Material Futuro</x:String>
                                     <x:String>Material Actual</x:String>
@@ -76,13 +76,13 @@
                             <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
                                 <controls:CustomEntry BackgroundColor="Transparent" WidthRequest="100" Keyboard="Numeric" 
                                   FontFamily="Formularios" FontSize="22" 
-                                  HorizontalTextAlignment="Center" TextColor="Black"/>
+                                  HorizontalTextAlignment="Center" TextColor="Black" x:Name="txtPaginas"/>
                             </Frame>
                         </StackLayout>
                         <StackLayout HorizontalOptions="EndAndExpand">
                             <Label Text="Estado del material:" FontSize="18" FontAttributes="Bold" FontFamily="Formularios" TextColor="Black"/>
                             <Frame BackgroundColor="#A1A1A1" CornerRadius="40" Padding="0">
-                                    <Picker x:Name="pickerEstadoMaterial" BackgroundColor="Transparent" FontFamily="Formularios" HorizontalTextAlignment="Center" FontSize="22" TextColor="Black">
+                                    <Picker x:Name="pickerEstadoMaterial" BackgroundColor="Transparent" FontFamily="Formularios" HorizontalTextAlignment="Center" FontSize="22" TextColor="Black" SelectedIndexChanged="OnPickerEstadoMaterialChanged">
                                         <Picker.Items>
                                             <x:String>Lo he terminado de leer</x:String>
                                             <x:String>No lo he terminado de leer</x:String>

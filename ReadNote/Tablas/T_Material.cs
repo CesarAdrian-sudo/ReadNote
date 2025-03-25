@@ -23,6 +23,8 @@ namespace ReadNote.Tablas
         [MaxLength(255)]
         public string DescripcionMaterial { get; set; }
 
+        [MaxLength(50)]
+        public string CategoriaMaterial { get; set; }
         [MaxLength(10)]
         public int noPaginasMaterial { get; set; }
 
