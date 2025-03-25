@@ -8,7 +8,7 @@ using Xamarin.Essentials;
 
 namespace ReadNote.Droid
 {
-    [Activity(Label = "ReadNote", Icon = "@mipmap/icon", Theme = "@style/MainTheme",
+    [Activity(Label = "ReadNote", Icon = "@mipmap/ic_ReadNote", Theme = "@style/MainTheme",
               MainLauncher = true,
               ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation |
                                    ConfigChanges.UiMode | ConfigChanges.ScreenLayout |

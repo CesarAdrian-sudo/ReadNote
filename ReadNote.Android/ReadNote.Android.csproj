@@ -135,5 +135,23 @@
     <AndroidResource Include="Resources\drawable\MaterialFut.png" />
     <AndroidResource Include="Resources\drawable\notaRapida.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\mipmap-anydpi-v26\ic_ReadNote.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_ReadNote.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_ReadNote_adaptive_back.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_ReadNote_adaptive_fore.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_ReadNote.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_ReadNote_adaptive_back.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_ReadNote_adaptive_fore.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_ReadNote.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_ReadNote_adaptive_back.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_ReadNote_adaptive_fore.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_ReadNote.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_ReadNote_adaptive_back.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_ReadNote_adaptive_fore.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_ReadNote.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_ReadNote_adaptive_back.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_ReadNote_adaptive_fore.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

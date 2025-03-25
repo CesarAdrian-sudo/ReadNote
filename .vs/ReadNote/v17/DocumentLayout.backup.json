@@ -77,6 +77,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "RegistrarMatVista.xaml",
               "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml",
               "RelativeDocumentMoniker": "ReadNote\\Vistas\\Material\\RegistrarMatVista.xaml",
@@ -97,6 +98,14 @@
               "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml.cs",
               "RelativeToolTip": "ReadNote\\Vistas\\Colecciones\\RegistrarColeccionVista.xaml.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAzwCsAAAAtAAAAAAAAAA==",
+=======
+              "Title": "RegistrarIndividualMaterialColeccionVista.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs",
+              "RelativeDocumentMoniker": "ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs",
+              "ToolTip": "C:\\Users\\kr500\\source\\repos\\ReadNote2\\ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs*",
+              "RelativeToolTip": "ReadNote\\Vistas\\MaterialColeccion\\RegistrarIndividualMaterialColeccionVista.xaml.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCQAAAAnAAAAAAAAAA==",
+>>>>>>> 2cea53597de485816cb6cc3d8519b361d3bd5d5e
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T21:53:35.292Z",
               "IsPinned": true,
