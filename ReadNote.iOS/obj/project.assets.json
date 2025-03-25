@@ -1910,17 +1910,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ferch\\.nuget\\packages\\": {},
+    "C:\\Users\\acost\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferch\\Source\\Repos\\ReadNote_GC\\ReadNote.iOS\\ReadNote.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote.iOS\\ReadNote.iOS.csproj",
       "projectName": "ReadNote.iOS",
-      "projectPath": "C:\\Users\\ferch\\Source\\Repos\\ReadNote_GC\\ReadNote.iOS\\ReadNote.iOS.csproj",
-      "packagesPath": "C:\\Users\\ferch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferch\\Source\\Repos\\ReadNote_GC\\ReadNote.iOS\\obj\\",
+      "projectPath": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote.iOS\\ReadNote.iOS.csproj",
+      "packagesPath": "C:\\Users\\acost\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -1928,7 +1928,7 @@
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ferch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\acost\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1942,8 +1942,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\ferch\\Source\\Repos\\ReadNote_GC\\ReadNote\\ReadNote.csproj": {
-              "projectPath": "C:\\Users\\ferch\\Source\\Repos\\ReadNote_GC\\ReadNote\\ReadNote.csproj"
+            "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj": {
+              "projectPath": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj"
             }
           }
         }

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReadNote.Vistas.Alarmas.AlarmasInicio"
-              BackgroundImageSource="fondoalarma">
+             BackgroundColor="#3A2121">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -22,7 +22,7 @@
             <x:Double x:Key="ButtonHeight">120</x:Double>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <ContentPage.Content>
         <Grid RowDefinitions="Auto,*,Auto" Padding="10">
             <!-- Barra Superior -->
@@ -89,3 +89,4 @@
         </Grid>
     </ContentPage.Content>
 </ContentPage>
+

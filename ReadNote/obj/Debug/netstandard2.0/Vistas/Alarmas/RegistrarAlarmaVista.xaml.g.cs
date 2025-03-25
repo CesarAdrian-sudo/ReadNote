@@ -17,8 +17,28 @@ namespace ReadNote.Vistas.Alarmas {
     public partial class RegistrarAlarmaVista : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomPicker pickerMaterial;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomTimePicker timeAlarma;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomEditor txtMensajeAlarma;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ReadNote.CustomControls.CustomPicker pickerTipoAlarma;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button btnCrear;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(RegistrarAlarmaVista));
+            pickerMaterial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomPicker>(this, "pickerMaterial");
+            timeAlarma = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomTimePicker>(this, "timeAlarma");
+            txtMensajeAlarma = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomEditor>(this, "txtMensajeAlarma");
+            pickerTipoAlarma = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ReadNote.CustomControls.CustomPicker>(this, "pickerTipoAlarma");
+            btnCrear = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnCrear");
         }
     }
 }
