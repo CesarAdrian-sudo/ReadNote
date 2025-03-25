@@ -3380,3 +3380,8 @@ C:\Users\ferch\Source\Repos\ReadNote_GC\ReadNote.Android\obj\Debug\130\res\drawa
 C:\Users\ferch\Source\Repos\ReadNote_GC\ReadNote.Android\obj\Debug\130\res\drawable\fondoindex.jpg
 C:\Users\ferch\Source\Repos\ReadNote_GC\ReadNote.Android\obj\Debug\130\res\drawable\fondomaterial.jpg
 C:\Users\ferch\Source\Repos\ReadNote_GC\ReadNote.Android\obj\Debug\130\res\drawable\fondonota.jpg
+C:\Users\kr500\source\repos\ReadNote\ReadNote.Android\obj\Debug\130\res\drawable\fondoalarma.jpg
+C:\Users\kr500\source\repos\ReadNote\ReadNote.Android\obj\Debug\130\res\drawable\fondocoleccion.jpeg
+C:\Users\kr500\source\repos\ReadNote\ReadNote.Android\obj\Debug\130\res\drawable\fondoindex.jpg
+C:\Users\kr500\source\repos\ReadNote\ReadNote.Android\obj\Debug\130\res\drawable\fondomaterial.jpg
+C:\Users\kr500\source\repos\ReadNote\ReadNote.Android\obj\Debug\130\res\drawable\fondonota.jpg

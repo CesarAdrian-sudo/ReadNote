@@ -7,17 +7,17 @@
     <ContentPage.Content>
         <Grid Padding="10">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <!-- Barra Superior -->
             <Frame Grid.Row="0" Padding="5" BackgroundColor="#D9D9D9" CornerRadius="30" BorderColor="Transparent">
                 <Grid BackgroundColor="LightGray" HeightRequest="50">
                     <Image Source="volver.png" WidthRequest="{DynamicResource IconSize}" HeightRequest="{DynamicResource IconSize}"
-                 VerticalOptions="Center" HorizontalOptions="Start" Margin="10">
+                       VerticalOptions="Center" HorizontalOptions="Start" Margin="10">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnVolverTapped"/>
                         </Image.GestureRecognizers>
@@ -25,68 +25,39 @@
                 </Grid>
             </Frame>
 
+            <!-- Título  -->
+            <Label Grid.Row="1" Text="Material Actual" FontSize="30" FontAttributes="Bold" TextColor="White" 
+               HorizontalOptions="Center" Margin="0,0,0,20" FontFamily="Lemon"/>
 
-            <!-- Título -->
-            <Label Grid.Row="1" Text="Material-Actual"
-                   FontSize="35" FontAttributes="Bold" TextColor="White" FontFamily="Lemon"
-                   HorizontalOptions="Center" Margin="0,10,0,10"/>
-
-            <!-- Tabla de Material -->
-            <Frame Grid.Row="2" BackgroundColor="#D9D9D9" CornerRadius="20" Padding="5" Margin="0,10,0,10">
+            <!-- Notas Consultadas -->
+            <Frame Grid.Row="2" BackgroundColor="#D9D9D9" CornerRadius="40"
+               VerticalOptions="FillAndExpand" Padding="10">
                 <ScrollView>
-                <Grid BackgroundColor="#D9D9D9"
-                      Padding="1">
-
-                    <!-- Definición de Columnas -->
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-
-                    <!-- Definición de Filas -->
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-
-                    <!-- Encabezados con bordes -->
-                    <Frame BackgroundColor="#A1A1A1" Padding="5" BorderColor="Black" HasShadow="False" Grid.Row="0" Grid.Column="0" CornerRadius="20">
-                        <Label Text="Nombre" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" FontFamily="Lemon"/>
-                    </Frame>
-                    <Frame BackgroundColor="#A1A1A1" Padding="5" BorderColor="Black" HasShadow="False" Grid.Row="0" Grid.Column="1" CornerRadius="20">
-                        <Label Text="Fecha" FontFamily="Lemon" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
-                    </Frame>
-
-                    <!-- Filas con datos -->
-                    <Frame BackgroundColor="#A1A1A1" Padding="5" BorderColor="Black" HasShadow="False" Grid.Row="1" Grid.Column="0" CornerRadius="20">
-                        <Label Text="Libro 1" FontFamily="Lemon" FontAttributes="Italic,Bold" TextColor="Black" HorizontalOptions="Center"/>
-                    </Frame>
-                    <Frame BackgroundColor="#A1A1A1" Padding="5" BorderColor="Black" HasShadow="False" Grid.Row="1" Grid.Column="1" CornerRadius="20">
-                        <Label Text="2025/01/01" FontFamily="Lemon" FontAttributes="Italic" TextColor="Black" HorizontalOptions="Center"/>
-                    </Frame>
-
-                    <Frame BackgroundColor="#A1A1A1" Padding="5" BorderColor="Black" HasShadow="False" Grid.Row="2" Grid.Column="0" CornerRadius="20">
-                        <Label Text="Libro 1" FontFamily="Lemon" FontAttributes="Italic,Bold" TextColor="Black" HorizontalOptions="Center"/>
-                    </Frame>
-                    <Frame BackgroundColor="#A1A1A1" Padding="5" BorderColor="Black" HasShadow="False" Grid.Row="2" Grid.Column="1" CornerRadius="20">
-                        <Label Text="2025/01/01" FontFamily="Lemon" FontAttributes="Italic" TextColor="Black" HorizontalOptions="Center"/>
-                    </Frame>
-
-                    <Frame BackgroundColor="#A1A1A1" Padding="5" BorderColor="Black" HasShadow="False" Grid.Row="3" Grid.Column="0" CornerRadius="20">
-                        <Label Text="Libro 1" FontFamily="Lemon" FontAttributes="Italic,Bold" TextColor="Black" HorizontalOptions="Center"/>
-                    </Frame>
-                    <Frame BackgroundColor="#A1A1A1" Padding="5" BorderColor="Black" HasShadow="False" Grid.Row="3" Grid.Column="1" CornerRadius="20">
-                        <Label Text="2025/01/01" FontFamily="Lemon" FontAttributes="Italic" TextColor="Black" HorizontalOptions="Center"/>
-                    </Frame>
-
-                </Grid>
+                    <ListView x:Name="ListaMaterialesActuales"
+                          HasUnevenRows="True"
+                          SeparatorVisibility="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame BackgroundColor="#A1A1A1" CornerRadius="20" Padding="10"
+                                       Margin="0,20,0,0" HeightRequest="60">
+                                        <Label Text="{Binding NombreMaterial}"
+                                           FontAttributes="Italic,Bold"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"
+                                           FontFamily="Lemon"
+                                           FontSize="15"
+                                           TextColor="Black"/>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
                 </ScrollView>
             </Frame>
 
             <!-- Barra Inferior -->
-            <Frame Grid.Row="3" Padding="15" BackgroundColor="#D9D9D9" CornerRadius="40" BorderColor="Transparent">
+            <Frame Grid.Row="3" Padding="15" BackgroundColor="#D9D9D9" CornerRadius="40" BorderColor="Transparent" Margin="0,15,0,0">
                 <Grid BackgroundColor="#D9D9D9" HeightRequest="50">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -95,13 +66,59 @@
                     </Grid.ColumnDefinitions>
 
                     <Image Source="notificacion.png" WidthRequest="50" HeightRequest="50" Grid.Column="0"
-                VerticalOptions="Center" HorizontalOptions="Center"/>
+                       VerticalOptions="Center" HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnNotificacionTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Image Source="mas.png" WidthRequest="50" HeightRequest="50" Grid.Column="1"
-                VerticalOptions="Center" HorizontalOptions="Center"/>
+                       VerticalOptions="Center" HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMasTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Image Source="nuevacuenta.png" WidthRequest="50" HeightRequest="50" Grid.Column="2"
-                VerticalOptions="Center" HorizontalOptions="Center"/>
+                       VerticalOptions="Center" HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnCuentaTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                 </Grid>
             </Frame>
+
+            <!-- MENU FLOTANTE DEL BOTON "+"-->
+            <AbsoluteLayout Grid.Row="2" IsVisible="False" x:Name="popupMenu">
+                <Frame BackgroundColor="#AFAFAF" CornerRadius="20"
+                    WidthRequest="200" HeightRequest="250"
+                    AbsoluteLayout.LayoutBounds=".5,.0,AutoSize,AutoSize"
+                    AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame BackgroundColor="#D9D9D9" CornerRadius="20"
+               WidthRequest="100" HeightRequest="100">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Image Source="notaRapida.png" WidthRequest="40" HeightRequest="40"/>
+                                <Label Text="Nota Rápida" FontAttributes="Bold" FontSize="14" FontFamily="Lemon" HorizontalTextAlignment="Center" TextColor="Black"
+                       HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnNotaRapidaTapped"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+
+                        <Frame BackgroundColor="#D9D9D9" CornerRadius="20"
+               WidthRequest="100" HeightRequest="100">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Image Source="MaterialFut.png" WidthRequest="40" HeightRequest="40"/>
+                                <Label Text="Material Futuro" FontAttributes="Bold" FontSize="14" FontFamily="Lemon" HorizontalTextAlignment="Center" TextColor="Black"
+                       HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnMaterialFuturoTapped"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </AbsoluteLayout>
 
         </Grid>
     </ContentPage.Content>

@@ -25,6 +25,16 @@ namespace ReadNote.Vistas.Material.Actual
             conexion.CreateTableAsync<T_Material>().Wait();
 
             btnRegistrarMaterial.Clicked += BtnRegistrar_Clicked;
+
+            // Rellenar el Picker con las opciones "Material Futuro" y "Material Actual"
+            pickerTipoMaterial.Items.Add("Material Futuro"); // TipoMaterial = false
+            pickerTipoMaterial.Items.Add("Material Actual"); // TipoMaterial = true
+            pickerTipoMaterial.SelectedIndexChanged += OnPickerTipoMaterialChanged;
+
+            // Rellenar el Picker para el estado del material
+            pickerEstadoMaterial.Items.Add("No lo he terminado"); // EstadoMaterial = false
+            pickerEstadoMaterial.Items.Add("Terminado");    // EstadoMaterial = true
+            pickerEstadoMaterial.SelectedIndexChanged += OnPickerEstadoMaterialChanged;
         }
 
         private bool valorBooleano;  // Para almacenar el valor del pickerTipoMaterial (Material Futuro/Actual)
@@ -84,7 +94,6 @@ namespace ReadNote.Vistas.Material.Actual
             // Navegar automáticamente a la vista de consulta
             await Navigation.PushAsync(new IndexMaterialVista());
         }
-
 
         private async void OnVolverTapped(object sender, EventArgs e)
         {

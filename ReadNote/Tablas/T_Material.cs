@@ -38,9 +38,6 @@ namespace ReadNote.Tablas
 
         [MaxLength(50)]
 
-        public string TiempoLectura { get; set; }
-
-        [MaxLength(255)]
 
         public DateTime fechaCreacion { get; set; }
     }
