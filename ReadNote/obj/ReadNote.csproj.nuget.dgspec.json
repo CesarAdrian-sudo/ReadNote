@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\kr500\\source\\repos\\ReadNote\\ReadNote\\ReadNote.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\kr500\\source\\repos\\ReadNote\\ReadNote\\ReadNote.csproj",
         "packagesPath": "C:\\Users\\kr500\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\kr500\\source\\repos\\ReadNote\\ReadNote\\obj\\",
+=======
+    "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj",
+        "projectName": "ReadNote",
+        "projectPath": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj",
+        "packagesPath": "C:\\Users\\acost\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote\\obj\\",
+>>>>>>> 647a399091b73ee73c0f36aef5e3e007bbede210
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\kr500\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\acost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 647a399091b73ee73c0f36aef5e3e007bbede210
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

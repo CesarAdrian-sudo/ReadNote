@@ -1910,17 +1910,29 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\kr500\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\acost\\.nuget\\packages\\": {},
+>>>>>>> 647a399091b73ee73c0f36aef5e3e007bbede210
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\kr500\\source\\repos\\ReadNote\\ReadNote.iOS\\ReadNote.iOS.csproj",
       "projectName": "ReadNote.iOS",
       "projectPath": "C:\\Users\\kr500\\source\\repos\\ReadNote\\ReadNote.iOS\\ReadNote.iOS.csproj",
       "packagesPath": "C:\\Users\\kr500\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kr500\\source\\repos\\ReadNote\\ReadNote.iOS\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote.iOS\\ReadNote.iOS.csproj",
+      "projectName": "ReadNote.iOS",
+      "projectPath": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote.iOS\\ReadNote.iOS.csproj",
+      "packagesPath": "C:\\Users\\acost\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote.iOS\\obj\\",
+>>>>>>> 647a399091b73ee73c0f36aef5e3e007bbede210
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -1928,7 +1940,11 @@
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\kr500\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\acost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 647a399091b73ee73c0f36aef5e3e007bbede210
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1942,8 +1958,13 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\kr500\\source\\repos\\ReadNote\\ReadNote\\ReadNote.csproj": {
               "projectPath": "C:\\Users\\kr500\\source\\repos\\ReadNote\\ReadNote\\ReadNote.csproj"
+=======
+            "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj": {
+              "projectPath": "C:\\Users\\acost\\Source\\Repos\\ReadNote\\ReadNote\\ReadNote.csproj"
+>>>>>>> 647a399091b73ee73c0f36aef5e3e007bbede210
             }
           }
         }
